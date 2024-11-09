@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Assemble_VVE_Female.label>Собрать Каркас силовой брони</Assemble_VVE_Female.label>
+  <Assemble_VVE_Female.description>Сборка Каркаса силовой брони.</Assemble_VVE_Female.description>
+  <Assemble_VVE_Female.jobString>Собирает Каркас силовой брони.</Assemble_VVE_Female.jobString>
+
+  <Assemble_VVE_ShoulderArmor.label>Собрать Наплечники силовой брони</Assemble_VVE_ShoulderArmor.label>
+  <Assemble_VVE_ShoulderArmor.description>Наплечники силовой брони.</Assemble_VVE_ShoulderArmor.description>
+  <Assemble_VVE_ShoulderArmor.jobString>Создаёт Наплечники силовой брони.</Assemble_VVE_ShoulderArmor.jobString>
+
+  <Assemble_VVE_ActuatorArmor.label>Собрать Сервоприводы силовой брони</Assemble_VVE_ActuatorArmor.label>
+  <Assemble_VVE_ActuatorArmor.description>Сервоприводы силовой брони.</Assemble_VVE_ActuatorArmor.description>
+  <Assemble_VVE_ActuatorArmor.jobString>Собирает Сервоприводы силовой брони.</Assemble_VVE_ActuatorArmor.jobString>
+
+  <Assemble_VVE_SpairPartsArmor.label>Собрать Набор запчастей силовой брони</Assemble_VVE_SpairPartsArmor.label>
+  <Assemble_VVE_SpairPartsArmor.description>Набор запчастей силовой брони.</Assemble_VVE_SpairPartsArmor.description>
+  <Assemble_VVE_SpairPartsArmor.jobString>Создаёт Набор запчастей силовой брони.</Assemble_VVE_SpairPartsArmor.jobString>
+
+
+</LanguageData>

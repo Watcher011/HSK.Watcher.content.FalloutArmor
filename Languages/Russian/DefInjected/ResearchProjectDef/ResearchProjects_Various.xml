@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <VVE_BasicVehicles.label>Основа транспортных средств</VVE_BasicVehicles.label>
+  <VVE_BasicVehicles.description>Основные станки и запасные части для транспортных средств.</VVE_BasicVehicles.description>
+  <VVE_BasicVehicles.generalRules.rulesStrings.0>subject-&gt;Автомобильные детали</VVE_BasicVehicles.generalRules.rulesStrings.0>
+  <VVE_BasicVehicles.generalRules.rulesStrings.1>subject_story-&gt;Мы открыли эру нового и удобного транспорта</VVE_BasicVehicles.generalRules.rulesStrings.1>
+  <VVE_BasicVehicles.generalRules.rulesStrings.2>subject_story-&gt;Можно будет забыть о старых способах передвижения.</VVE_BasicVehicles.generalRules.rulesStrings.2>
+  <VVE_BasicVehicles.generalRules.rulesStrings.3>subject_story-&gt;Мы сможем лучше защищаться и атаковать в новую эру автомобильной промышленности.</VVE_BasicVehicles.generalRules.rulesStrings.3>
+  <VVE_BasicVehicles.generalRules.rulesStrings.4>subject_gerund-&gt;изобретение новых способов передвижения</VVE_BasicVehicles.generalRules.rulesStrings.4>
+
+  <VVE_JetVehicles_C4.label>Силовая броня</VVE_JetVehicles_C4.label>
+  <VVE_JetVehicles_C4.description>Вершина технологии защиты.</VVE_JetVehicles_C4.description>
+ 
+
+
+</LanguageData>

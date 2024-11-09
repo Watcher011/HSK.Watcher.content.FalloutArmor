@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>VVE_CarParts</defName>
+    <label>car parts</label>
+    <parent>Manufactured</parent>
+    <iconPath>UI/Icons/ThingCategories/CarParts</iconPath>
+    <resourceReadoutRoot>true</resourceReadoutRoot>
+  </ThingCategoryDef>
+  
+  <ThingDef Name="VVE_CarPartBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>14</pathCost>
+    <allowedArchonexusCount>-1</allowedArchonexusCount>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+	<healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>70</MaxHitPoints>
+      <Flammability>0.6</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+	  <Beauty>-4</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>VVE_CarParts</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <!-- all the costLists are placeholders for now -->
+  
+  <ThingDef ParentName="VVE_CarPartBase">
+    <defName>VVE_Female</defName>
+    <label>Каркас силовой брони</label>
+    <description>Представляет собой экзоскелет-каркас, который служит основой для формирования любого комплекта силовой брони. Поверх каркаса крепятся элементы силовой брони, а специальный разъём на спине с «вентильной ручкой» предназначен для установки ядерного блока, который приводит в движение всю массивную конструкцию.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/CarPart_Female</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>325</MarketValue>
+      <Mass>40</Mass>
+	  <Bulk>40</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>VVE_CarPartBasic</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="VVE_CarPartBase">
+    <defName>VVE_ShoulderArmor</defName>
+    <label>Наплечники силовой брони</label>
+    <description>Представляет собой наплечники с продольными полосами и усилителями в плечевых суставах.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/CarPart_ShoulderArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>125</MarketValue>
+      <Mass>25</Mass>
+	  <Bulk>20</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>VVE_CarPartBasic</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+   <ThingDef ParentName="VVE_CarPartBase">
+    <defName>VVE_ActuatorArmor</defName>
+    <label>Сервоприводы силовой брони</label>
+    <description>Представляет собой моторы с редуктарами и усилителями.Позволяет броне двигаться.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/CarPart_Actuator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>35</MarketValue>
+      <Mass>5</Mass>
+	  <Bulk>5</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>VVE_CarPartBasic</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+    <ThingDef ParentName="VVE_CarPartBase">
+    <defName>VVE_SpairPartsArmor</defName>
+    <label>Набор запчастей силовой брони</label>
+    <description>Представляет собой резинки ,прокладки,болты и смазку.Позволяет броне двигаться.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/CarPart_SpairParts</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>35</MarketValue>
+      <Mass>1</Mass>
+	  <Bulk>2</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>VVE_CarPartBasic</li>
+    </tradeTags>
+  </ThingDef>
+  
+</Defs>

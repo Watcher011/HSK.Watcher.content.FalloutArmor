@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<VVE_Streaky.label>Полосатый</VVE_Streaky.label>
+<VVE_8bit.label>8 бит</VVE_8bit.label>
+<VVE_Blocky.label>Блочный</VVE_Blocky.label>
+<VVE_CallOfDuty.label>CallOfDuty</VVE_CallOfDuty.label>
+<VVE_Dots.label>Точки</VVE_Dots.label>
+<VVE_GeometricGrunge.label> Геометрический гранж</VVE_GeometricGrunge.label>
+<VVE_Gloss.label> Глянец</VVE_Gloss.label>
+<VVE_Grunge.label> Гранж</VVE_Grunge.label>
+<VVE_Marble.label> Мрамор</VVE_Marble.label>
+<VVE_Painted.label>Окрашенный</VVE_Painted.label>
+<VVE_Processor.label>Процессор</VVE_Processor.label>
+<VVE_Reactive.label>Реактивный</VVE_Reactive.label>
+<VVE_Rocky.label>Скалистая</VVE_Rocky.label>
+<VVE_Savannah.label>Саванна</VVE_Savannah.label>
+<VVE_Shine.label>Блеск</VVE_Shine.label>
+<VVE_Smudges.label>Пятна</VVE_Smudges.label>
+<VVE_Splatter.label>Брызги</VVE_Splatter.label>
+<VVE_Stamped.label>Штампованный</VVE_Stamped.label> 
+<VVE_Vinyl.label>Винил</VVE_Vinyl.label>
+ <VVE_Wildcat.label>ДикийКот</VVE_Wildcat.label>
+</LanguageData>

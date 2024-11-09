@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+
+<Assemble_VVE_Female.label>Assemble Power Armor Frame</Assemble_VVE_Female.label>
+<Assemble_VVE_Female.description>Assembles Power Armor Frame.</Assemble_VVE_Female.description>
+<Assemble_VVE_Female.jobString>Assembles Power Armor Frame.</Assemble_VVE_Female.jobString>
+
+<Assemble_VVE_ShoulderArmor.label>Assemble Power Armor Shoulders</Assemble_VVE_ShoulderArmor.label>
+<Assemble_VVE_ShoulderArmor.description>Power Armor Shoulders.</Assemble_VVE_ShoulderArmor.description>
+<Assemble_VVE_ShoulderArmor.jobString>Creates Power Armor Shoulder Pads.</Assemble_VVE_ShoulderArmor.jobString>
+
+<Assemble_VVE_ActuatorArmor.label>Assemble Power Armor Servos</Assemble_VVE_ActuatorArmor.label>
+<Assemble_VVE_ActuatorArmor.description>Power Armor Servos.</Assemble_VVE_ActuatorArmor.description>
+<Assemble_VVE_ActuatorArmor.jobString>Assembles Power Armor Servos.</Assemble_VVE_ActuatorArmor.jobString>
+
+<Assemble_VVE_SpairPartsArmor.label>Assemble Power Armor Spare Parts Kit</Assemble_VVE_SpairPartsArmor.label>
+<Assemble_VVE_SpairPartsArmor.description>A set of power armor parts.</Assemble_VVE_SpairPartsArmor.description>
+<Assemble_VVE_SpairPartsArmor.jobString>Creates a Power Armor Parts Set.</Assemble_VVE_SpairPartsArmor.jobString>
+
+</LanguageData>

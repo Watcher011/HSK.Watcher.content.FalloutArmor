@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+	<Vehicles.VehicleDef ParentName="VehiclePawn_Armored">
+		<defName>VVE_PowerArmor</defName>
+		<label>Т-60A</label>
+		<description>Силовую броню T-60 американская армия начала использовать вскоре после битвы при Анкоридже. Данный вариант силовой брони внешне выглядит сильно похожим на модель T-45d из предшествующих игр. Поворот вентиля на спинной части «раскрывает» броню, давая возможность оператору устроиться внутри. После броня закрывается и герметизируется. Кроме того, шлем брони имеет встроенный дисплей, который позволяет оператору наблюдать за состоянием силовой брони, окружающей среды, состоянием собственного здоровья. Имеет встроенный счётчик боеприпасов (показывающий текущий и резервный уровень боезапаса). В сериале Fallout нам так же показали, что шлем имеет подвижную лицевую часть, которая откидывается и открывает лицо оператора, что так же может быть лишь последующей модификацией, а не изначальной функцией.</description>
+		
+		<graphicData>
+			<texPath>Things/Vehicles/Tier1/Tier1_TArm/Tier1_TArm</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<color>(128,128,128)</color>
+			<colorTwo>(65, 75, 80)</colorTwo>
+			<colorThree>(45, 50, 45)</colorThree>
+		</graphicData>
+		
+		<fillPercent>1</fillPercent>
+		
+		<buildDef>VVE_PowerArmor_Blueprint</buildDef>
+		
+		<size>(2,2)</size>
+		
+		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
+		<vehicleCategory>Combat</vehicleCategory>
+		<techLevel>Industrial</techLevel>
+		<vehicleType>Land</vehicleType>
+		
+		<statBases>
+			<WorkToMake>37000</WorkToMake>
+			<EnergyShieldRechargeRate>0.10</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>2.0</EnergyShieldEnergyMax>
+			<MaxHitPoints>130</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Mass>150</Mass>
+			<Bulk>180</Bulk>
+			<WornBulk>18</WornBulk>
+			<EquipDelay>14</EquipDelay>
+			<Insulation_Heat>30</Insulation_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+			<StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>5.13</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>15.27</ArmorRating_Sharp>
+			<ArmorRating_Blunt>40.279</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.3</ArmorRating_Heat>
+		</statBases>
+		
+		<vehicleStats>
+			<Mass>300</Mass>
+			<MoveSpeed>6.6</MoveSpeed>
+			<CargoCapacity>600</CargoCapacity>
+			<RepairRate>0.2</RepairRate>
+			<AccelerationRate>0.06</AccelerationRate>
+		</vehicleStats>
+		
+		<soundSustainersOnEvent>
+			<li>
+				<start>IgnitionOn</start>
+				<stop>IgnitionOff</stop>
+				<value>VVE_VehicleEngineHeavy</value>
+			</li>
+		</soundSustainersOnEvent>
+		
+		<race>
+			<baseBodySize>2.5</baseBodySize>
+		</race>
+		
+		<properties>
+			<customRoadCosts AssignDefaults = "0.4"/>
+			
+			<vehicleJobLimitations>
+				<li>(RepairVehicle, 3)</li>
+			</vehicleJobLimitations>
+			
+			<roles>
+				<li>
+					<key>driver</key>
+					<label>Driver</label>
+					<slots>1</slots>
+					<slotsToOperate>1</slotsToOperate>
+					
+					<handlingTypes>
+					<li>Movement</li>
+					<li>Turret</li>
+					</handlingTypes>
+					
+					<turretIds>
+						<li>mainTurret</li>
+					</turretIds>
+					
+					<hitbox>
+						<cells>
+							<li>(0, 1)</li>
+						</cells>
+					</hitbox>
+				</li>
+			</roles>
+		</properties>
+		
+			<components>
+			<li>
+				<key>Engine</key>
+				<label>Мотор</label>
+				<health>1000</health>
+				<priorityStatEfficiency>true</priorityStatEfficiency>
+				<depth>Internal</depth>
+				
+				<reactors>
+					<li Class = "Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.35</chance>
+						<maxHealth>0.3</maxHealth>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+				<armor>
+				<ArmorRating_Blunt>50</ArmorRating_Blunt>
+				<ArmorRating_Sharp>5.0</ArmorRating_Sharp>
+			    </armor>
+				<hitbox>
+					<cells>
+						<li>(1, 1)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			
+			<li>
+				<key>FrontLeftLeg</key>
+				<label>Привод левой ноги</label>
+				<health>500</health>
+				<depth>External</depth>
+				
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<armor>
+				<ArmorRating_Blunt>32</ArmorRating_Blunt>
+				<ArmorRating_Sharp>8.2</ArmorRating_Sharp>
+			    </armor>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(-1, 1)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontRightLeg</key>
+				<label>Привод правой ноги</label>
+				<health>500</health>
+				<depth>External</depth>
+				
+				<tags>
+					<li>Wheel</li>
+				</tags>
+				<armor>
+				<ArmorRating_Blunt>32</ArmorRating_Blunt>
+				<ArmorRating_Sharp>8.2</ArmorRating_Sharp>
+			   </armor>
+				<hitbox>
+					<fallthrough>false</fallthrough>
+					<cells>
+						<li>(1, 1)</li>
+					</cells>
+				</hitbox>
+				
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>Gearbox</key>
+				<label>Редуктор</label>
+				<health>700</health>
+				<depth>Internal</depth>
+				
+				<hitbox>
+					<cells>
+						<li>(0, 1)</li>
+					</cells>
+				</hitbox>
+				<armor>
+				<ArmorRating_Blunt>90</ArmorRating_Blunt>
+				<ArmorRating_Sharp>10</ArmorRating_Sharp>
+		    	</armor>
+				<categories>
+					<li>MoveSpeed</li>
+				</categories>
+			</li>
+			<li>
+				<key>FrontArmor</key>
+				<label>Нагрудная броня</label>
+				<health>700</health>
+				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>90</ArmorRating_Blunt>
+			    	<ArmorRating_Sharp>10</ArmorRating_Sharp>
+				</armor>
+				
+				<hitbox>
+					<side>Front</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>LeftArmor</key>
+				<label>Боковая бронепластина(Левая)</label>
+				<health>400</health>
+				<depth>External</depth>
+				
+				<armor>
+					<ArmorRating_Blunt>32</ArmorRating_Blunt>
+				<ArmorRating_Sharp>8.2</ArmorRating_Sharp>
+				</armor>
+				
+				<hitbox>
+					<side>Left</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>RightArmor</key>
+				<label>Боковая бронепластина(Правая)</label>
+				<health>400</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>32</ArmorRating_Blunt>
+				     <ArmorRating_Sharp>8.2</ArmorRating_Sharp>
+				</armor>
+				
+				<hitbox>
+					<side>Right</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>BackArmor</key>
+				<label>Броня на спине</label>
+				<health>350</health>
+				<depth>External</depth>
+				<armor>
+					<ArmorRating_Blunt>32</ArmorRating_Blunt>
+				    <ArmorRating_Sharp>8.2</ArmorRating_Sharp>
+				</armor>
+				<hitbox>
+					<side>Back</side>
+				</hitbox>
+			</li>
+			<li>
+				<key>Chemtank</key>
+				<label>Батарея</label>
+				<health>250</health>
+				<depth>Internal</depth>
+				<reactors>
+					<li Class = "Vehicles.Reactor_FuelLeak"/>
+					<li Class = "Vehicles.Reactor_Explosive">
+						<indicator>VF_Explosive</indicator>
+						<chance>0.35</chance>
+						<maxHealth>0.3</maxHealth>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
+					</li>
+				</reactors>
+				<armor>
+				<ArmorRating_Blunt>10</ArmorRating_Blunt>
+				<ArmorRating_Sharp>2.6</ArmorRating_Sharp>
+			   </armor>
+				<hitbox>
+					<cells>
+						<li>(0, 0)</li>
+					</cells>
+				</hitbox>
+			</li>
+			<li>
+				<key>Dashboard</key>
+				<label>Привод управления</label>
+				<health>250</health>
+				<depth>Internal</depth>
+				<armor>
+				<ArmorRating_Blunt>16</ArmorRating_Blunt>
+				<ArmorRating_Sharp>4.0</ArmorRating_Sharp>
+			</armor>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>SteeringApparatus</key>
+				<label>Гидравличиский привод</label>
+				<health>250</health>
+				<depth>Internal</depth>
+				<armor>
+				<ArmorRating_Blunt>16</ArmorRating_Blunt>
+				<ArmorRating_Sharp>4.0</ArmorRating_Sharp>
+			</armor>
+				<hitWeight>5</hitWeight>
+			</li>
+			<li>
+				<key>Alternator</key>
+				<label>Генератор</label>
+				<health>250</health>
+				<depth>Internal</depth>
+				<armor>
+				<ArmorRating_Blunt>16</ArmorRating_Blunt>
+				<ArmorRating_Sharp>4.0</ArmorRating_Sharp>
+			</armor>
+			</li>
+
+		</components>
+		
+		
+		
+		<comps>
+			<li Class="Vehicles.CompProperties_FueledTravel">
+				<fuelType>Hexcell</fuelType>
+				<leakDef>Filth_Fuel</leakDef>
+				<fuelConsumptionRate>0.3</fuelConsumptionRate>
+				<fuelConsumptionWorldMultiplier>1.2</fuelConsumptionWorldMultiplier>
+				<fuelCapacity>1</fuelCapacity>
+			</li>
+			<li Class="Vehicles.CompProperties_VehicleTurrets">
+				<turrets>
+					<li>
+						<turretDef>HighMacs_MachineGun</turretDef>
+						<renderProperties>
+					    	<north>(0.8, 0.8)</north>
+							<south>(-0.7, -0.2)</south>
+							<east>(0.3, -0.3)</east>
+						</renderProperties>
+						<angleRestricted>(180,180)</angleRestricted>
+						<gizmoLabel>Main Turret</gizmoLabel>
+						<angleRestricted/>
+						<aimPieOffset>(0, 1)</aimPieOffset>
+						<key>mainTurret</key>
+					</li>
+				</turrets>
+			</li>
+			 
+		</comps>
+	</Vehicles.VehicleDef>
+</Defs>

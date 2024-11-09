@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<ThingDef ParentName="BaseBulletCE">
+		<defName>Bullet_Roadkill_MainTurret</defName>
+		<label>6mm Railgun bullet (Sabot)</label>
+		  <thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>33</damageAmountBase>
+			<armorPenetrationSharp>130</armorPenetrationSharp>
+			<armorPenetrationBlunt>150</armorPenetrationBlunt>
+			<speed>180</speed>
+		</projectile>
+	</ThingDef>
+
+	<Vehicles.VehicleTurretDef Name="RoadkillMainTurret" ParentName="VehicleTurretBase">
+		<defName>HighMacs_MachineGun</defName>
+		<label>roadkill cannon</label>
+		<description>A cannon capable of firing explosive tank shells over medium distance. Usually mounted on Roadkill tanks. Needs to be reloaded with steel. Can’t fire whilst moving. Has a decent range, but can’t target enemies too close.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>VVE_Shot_RoadkillCannonSound</shotSound>
+		<reloadSound>VVE_RoadkillReloadSound</reloadSound>
+		 <gizmoIconTexPath>Things/Item/Equipment/WeaponRanged/Minigun</gizmoIconTexPath>
+		<projectile>Bullet_Roadkill_MainTurret</projectile>
+		<reloadTimer>3.4</reloadTimer>
+		<warmUpTimer>1.5</warmUpTimer>
+		<magazineCapacity>300</magazineCapacity>
+		<chargePerAmmoCount>5</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.2</rotationSpeed>
+		
+		<restrictionType>Vehicles.TurretRestrictions_Stationary</restrictionType>
+		<projectileOffset>2.5</projectileOffset>
+		<hitFlags>IntendedTarget</hitFlags>
+		<maxRange>42.9</maxRange>
+		<minRange>1</minRange>
+		
+		<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+		
+		<recoil>
+			<distanceTotal>0.45</distanceTotal>
+			<distancePerTick>0.15</distancePerTick>
+			<speedMultiplierPostRecoil>0.35</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<vehicleRecoil>
+			<distanceTotal>0.1</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.55</speedMultiplierPostRecoil>
+		</vehicleRecoil>
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>		
+				<spreadRadius>1</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+		
+		<graphicData>
+			<texPath>Things/Vehicles/Tier1/Tier1_TArm/Tier1_TArm_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 4)</drawSize>
+			<layer>5</layer>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_5x50mmCaseless_Sabot</li>
+			</thingDefs>
+		</ammunition>
+		
+	</Vehicles.VehicleTurretDef>
+	
+	
+</Defs>

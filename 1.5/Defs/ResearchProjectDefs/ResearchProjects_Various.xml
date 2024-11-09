@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ResearchProjectDef>
+    <defName>VVE_BasicVehicles</defName>
+    <label>basis of vehicles</label>
+    <description>Basic machine tools and spare parts for vehicles.</description>
+    <baseCost>4000</baseCost>
+    <techLevel>Industrial</techLevel>
+	<prerequisites>
+      <li>BiofuelRefining</li>
+	  <li>Oil_Industry_C5</li>
+	  <li>MicroelectronicsBasics</li>
+	  <li>Metals_C1</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->Automotive Parts</li>
+    <li>subject_story->We have opened the era of new and convenient transportation</li>
+    <li>subject_story->It will be possible to forget about the old ways of moving</li>
+    <li>subject_story->We will be able to defend and attack better in the new era of the automotive industry</li>
+    <li>subject_gerund->inventing new ways to move</li>
+  </rulesStrings>
+</generalRules>
+  </ResearchProjectDef>
+  
+  
+   <ResearchProjectDef>
+    <defName>VVE_JetVehicles_C4</defName>
+    <label>Jet transport ll</label>
+    <description>Reusable jet capsules that allow you to transport a large amount of cargo.</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+	<prerequisites>
+      <li>VVE_BasicVehicles</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+	<tab>Vehicles</tab>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->Very fast and heavy-duty transport</li>
+    <li>subject_story->Now we can take more cargo</li>
+    <li>subject_gerund->Years and faster and carry more</li>
+  </rulesStrings>
+</generalRules>
+  </ResearchProjectDef>
+
+</Defs>

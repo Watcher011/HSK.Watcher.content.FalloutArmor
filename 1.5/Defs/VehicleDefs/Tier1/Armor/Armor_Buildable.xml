@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>VVE_PowerArmor_Blueprint</defName>
+		<label>Т-60A</label>
+		<description>Силовую броню T-60 американская армия начала использовать вскоре после битвы при Анкоридже. Данный вариант силовой брони внешне выглядит сильно похожим на модель T-45d из предшествующих игр. Поворот вентиля на спинной части «раскрывает» броню, давая возможность оператору устроиться внутри. После броня закрывается и герметизируется. Кроме того, шлем брони имеет встроенный дисплей, который позволяет оператору наблюдать за состоянием силовой брони, окружающей среды, состоянием собственного здоровья. Имеет встроенный счётчик боеприпасов (показывающий текущий и резервный уровень боезапаса). В сериале Fallout нам так же показали, что шлем имеет подвижную лицевую часть, которая откидывается и открывает лицо оператора, что так же может быть лишь последующей модификацией, а не изначальной функцией.</description>
+		<designationCategory>VF_Vehicles</designationCategory>
+		
+		<graphicData>
+			<texPath>Things/Vehicles/Tier1/Tier1_TArm/Tier1_TArm</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Flammability>0.05</Flammability>
+		</statBases>
+		
+		<size>(2,2)</size>
+		
+		<researchPrerequisites>
+			<li>VVE_JetVehicles_C4</li>
+		</researchPrerequisites>
+		
+		<costList>
+			<VVE_Female>1</VVE_Female>
+            <VVE_ShoulderArmor>1</VVE_ShoulderArmor>
+            <VVE_ActuatorArmor>4</VVE_ActuatorArmor>
+            <VVE_SpairPartsArmor>4</VVE_SpairPartsArmor>
+			<Plasteel>210</Plasteel>
+			<Carbon>25</Carbon>
+			<Compaste>20</Compaste>
+			<GoldBar>3</GoldBar>
+			<SyntheticFibers>5</SyntheticFibers>
+			<MagneticMaterial>6</MagneticMaterial>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Hexcell>1</Hexcell>
+			<Heavy_Component>1</Heavy_Component>
+			<ComponentIndustrial>45</ComponentIndustrial>
+			<ElectronicComponents>15</ElectronicComponents>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		
+		<thingToSpawn>VVE_PowerArmor</thingToSpawn>
+		
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</Vehicles.VehicleBuildDef>
+</Defs>

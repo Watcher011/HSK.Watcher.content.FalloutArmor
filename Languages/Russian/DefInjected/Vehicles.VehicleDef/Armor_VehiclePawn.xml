@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <VVE_PowerArmor.label>Т-60A</VVE_PowerArmor.label>
+  <VVE_PowerArmor.description>Силовую броню T-60 американская армия начала использовать вскоре после битвы при Анкоридже. Данный вариант силовой брони внешне выглядит сильно похожим на модель T-45d из предшествующих игр. Поворот вентиля на спинной части «раскрывает» броню, давая возможность оператору устроиться внутри. После броня закрывается и герметизируется. Кроме того, шлем брони имеет встроенный дисплей, который позволяет оператору наблюдать за состоянием силовой брони, окружающей среды, состоянием собственного здоровья. Имеет встроенный счётчик боеприпасов (показывающий текущий и резервный уровень боезапаса). В сериале Fallout нам так же показали, что шлем имеет подвижную лицевую часть, которая откидывается и открывает лицо оператора, что так же может быть лишь последующей модификацией, а не изначальной функцией.</VVE_PowerArmor.description>
+  <VVE_PowerArmor.properties.roles.0.label>Driver</VVE_PowerArmor.properties.roles.0.label>
+  <VVE_PowerArmor.components.0.label>Мотор</VVE_PowerArmor.components.0.label>
+  <VVE_PowerArmor.components.1.label>Привод левой ноги</VVE_PowerArmor.components.1.label>
+  <VVE_PowerArmor.components.2.label>Привод правой ноги</VVE_PowerArmor.components.2.label>
+  <VVE_PowerArmor.components.3.label>Редуктор</VVE_PowerArmor.components.3.label>
+  <VVE_PowerArmor.components.4.label>Нагрудная броня</VVE_PowerArmor.components.4.label>
+  <VVE_PowerArmor.components.5.label>Боковая бронепластина(Левая)</VVE_PowerArmor.components.5.label>
+  <VVE_PowerArmor.components.6.label>Боковая бронепластина(Правая)</VVE_PowerArmor.components.6.label>
+  <VVE_PowerArmor.components.7.label>Броня на спине</VVE_PowerArmor.components.7.label>
+  <VVE_PowerArmor.components.8.label>Батарея</VVE_PowerArmor.components.8.label>
+  <VVE_PowerArmor.components.9.label>Привод управления</VVE_PowerArmor.components.9.label>
+  <VVE_PowerArmor.components.10.label>Гидравличиский привод</VVE_PowerArmor.components.10.label>
+  <VVE_PowerArmor.components.11.label>Генератор</VVE_PowerArmor.components.11.label>
+
+
+</LanguageData>

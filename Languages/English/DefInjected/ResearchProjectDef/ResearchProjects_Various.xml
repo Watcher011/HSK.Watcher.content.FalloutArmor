@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <VVE_BasicVehicles.label>basis of vehicles</VVE_BasicVehicles.label>
+  <VVE_BasicVehicles.description>Basic machine tools and spare parts for vehicles.</VVE_BasicVehicles.description>
+  <VVE_BasicVehicles.generalRules.rulesStrings.0>subject-&gt;Automotive Parts</VVE_BasicVehicles.generalRules.rulesStrings.0>
+  <VVE_BasicVehicles.generalRules.rulesStrings.1>subject_story-&gt;We have opened the era of new and convenient transportation</VVE_BasicVehicles.generalRules.rulesStrings.1>
+  <VVE_BasicVehicles.generalRules.rulesStrings.2>subject_story-&gt;It will be possible to forget about the old ways of moving</VVE_BasicVehicles.generalRules.rulesStrings.2>
+  <VVE_BasicVehicles.generalRules.rulesStrings.3>subject_story-&gt;We will be able to defend and attack better in the new era of the automotive industry</VVE_BasicVehicles.generalRules.rulesStrings.3>
+  <VVE_BasicVehicles.generalRules.rulesStrings.4>subject_gerund-&gt;inventing new ways to move</VVE_BasicVehicles.generalRules.rulesStrings.4>
+
+  <VVE_JetVehicles_C4.label>Jet transport ll</VVE_JetVehicles_C4.label>
+  <VVE_JetVehicles_C4.description>Reusable jet capsules that allow you to transport a large amount of cargo.</VVE_JetVehicles_C4.description>
+  <VVE_JetVehicles_C4.generalRules.rulesStrings.0>subject-&gt;Very fast and heavy-duty transport</VVE_JetVehicles_C4.generalRules.rulesStrings.0>
+  <VVE_JetVehicles_C4.generalRules.rulesStrings.1>subject_story-&gt;Now we can take more cargo</VVE_JetVehicles_C4.generalRules.rulesStrings.1>
+  <VVE_JetVehicles_C4.generalRules.rulesStrings.2>subject_gerund-&gt;Years and faster and carry more</VVE_JetVehicles_C4.generalRules.rulesStrings.2>
+
+
+</LanguageData>

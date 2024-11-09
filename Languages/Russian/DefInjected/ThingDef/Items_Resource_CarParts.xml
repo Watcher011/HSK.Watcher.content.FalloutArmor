@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- all the costLists are placeholders for now -->
+
+  <VVE_Female.label>Каркас силовой брони</VVE_Female.label>
+  <VVE_Female.description>Представляет собой экзоскелет-каркас, который служит основой для формирования любого комплекта силовой брони. Поверх каркаса крепятся элементы силовой брони, а специальный разъём на спине с «вентильной ручкой» предназначен для установки ядерного блока, который приводит в движение всю массивную конструкцию.</VVE_Female.description>
+
+  <VVE_ShoulderArmor.label>Наплечники силовой брони</VVE_ShoulderArmor.label>
+  <VVE_ShoulderArmor.description>Представляет собой наплечники с продольными полосами и усилителями в плечевых суставах.</VVE_ShoulderArmor.description>
+
+  <VVE_ActuatorArmor.label>Сервоприводы силовой брони</VVE_ActuatorArmor.label>
+  <VVE_ActuatorArmor.description>Представляет собой моторы с редуктарами и усилителями.Позволяет броне двигаться.</VVE_ActuatorArmor.description>
+
+  <VVE_SpairPartsArmor.label>Набор запчастей силовой брони</VVE_SpairPartsArmor.label>
+  <VVE_SpairPartsArmor.description>Представляет собой резинки ,прокладки,болты и смазку.Позволяет броне двигаться.</VVE_SpairPartsArmor.description>
+
+
+</LanguageData>

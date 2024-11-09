@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AccelerationRate.label>Скорость ускорения</AccelerationRate.label>
+  <AccelerationRate.description>Скорость, с которой автомобиль разгоняется, в ячейках в секунду. Более высокая скорость означает, что автомобиль будет разгоняться до максимальной скорости быстрее. Это также влияет на скорость замедления, которая в два раза больше скорости ускорения.</AccelerationRate.description>
+  <AccelerationRate.formatString>{0} c/s²</AccelerationRate.formatString>
+
+
+</LanguageData>

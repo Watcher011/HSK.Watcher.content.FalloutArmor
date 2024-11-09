@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- all the costLists are placeholders for now -->
+
+
+<VVE_Female.label>Power Armor Frame</VVE_Female.label>
+<VVE_Female.description>It is an exoskeleton frame that serves as the basis for the formation of any set of power armor. Power armor elements are attached to the frame, and a special connector on the back with a "valve handle" is designed to install a nuclear block, which sets the entire massive structure in motion.</VVE_Female.description>
+
+<VVE_ShoulderArmor.label>Power armor shoulder pads</VVE_ShoulderArmor.label>
+
+<VVE_ShoulderArmor.description>These are shoulder pads with longitudinal stripes and reinforcements in the shoulder joints.</VVE_ShoulderArmor.description>
+
+<VVE_ActuatorArmor.label>Power armor servos</VVE_ActuatorArmor.label>
+<VVE_ActuatorArmor.description>These are motors with reducers and amplifiers. Allows the armor to move.</VVE_ActuatorArmor.description>
+
+<VVE_SpairPartsArmor.label>Power Armor Parts Set</VVE_SpairPartsArmor.label>
+<VVE_SpairPartsArmor.description>Consists of rubber bands, gaskets, bolts and grease. Allows the armor to move.</VVE_SpairPartsArmor.description>
+</LanguageData>

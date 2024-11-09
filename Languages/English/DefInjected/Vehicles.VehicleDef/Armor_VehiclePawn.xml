@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<VVE_PowerArmor.label>T-60A</VVE_PowerArmor.label>
+<VVE_PowerArmor.description>The T-60 power armor was introduced into service by the US Army shortly after the Battle of Anchorage. This version of the power armor looks very similar to the T-45d model from previous games. Turning a valve on the back "opens" the armor, allowing the operator to get inside. Afterwards, the armor is closed and sealed. In addition, the armor's helmet has a built-in display that allows the operator to monitor the state of the power armor, the environment, and their own health. It has a built-in ammunition counter (showing the current and reserve ammunition levels). In the Fallout series, we were also shown that the helmet has a movable face part that folds back and reveals the operator's face, which could also be just a subsequent modification, and not the original function.</VVE_PowerArmor.description>
+<VVE_PowerArmor.properties.roles.0.label>Driver</VVE_PowerArmor.properties.roles.0.label>
+<VVE_PowerArmor.components.0.label>Motor</VVE_PowerArmor.components.0.label>
+<VVE_PowerArmor.components.1.label>Left Leg Drive</VVE_PowerArmor.components.1.label>
+<VVE_PowerArmor.components.2.label>Right Leg Drive</VVE_PowerArmor.components.2.label>
+<VVE_PowerArmor.components.3.label>Reducer</VVE_PowerArmor.components.3.label>
+<VVE_PowerArmor.components.4.label>Chest Armor</VVE_PowerArmor.components.4.label>
+<VVE_PowerArmor.components.5.label>Side Armor Plate (Left)</VVE_PowerArmor.components.5.label>
+<VVE_PowerArmor.components.6.label>Side Armor Plate (Right)</VVE_PowerArmor.components.6.label>
+<VVE_PowerArmor.components.7.label>Back Armor</VVE_PowerArmor.components.7.label>
+<VVE_PowerArmor.components.8.label>Battery</VVE_PowerArmor.components.8.label>
+<VVE_PowerArmor.components.9.label>Control Actuator</VVE_PowerArmor.components.9.label>
+<VVE_PowerArmor.components.10.label>Hydraulic Actuator</VVE_PowerArmor.components.10.label>
+<VVE_PowerArmor.components.11.label>Generator</VVE_PowerArmor.components.11.label>
+</LanguageData>
